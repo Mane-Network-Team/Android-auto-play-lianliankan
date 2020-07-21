@@ -1,7 +1,9 @@
 # Android-auto-play-lianliankan
+**No updates without big bug or important issues.**
+
 Using python to play lianliankan in android.
 
-**No updates without big bug or important issues.**
+Use the SSIM algorithm to calculate the image similarity percentage in `mane_img.py`.
 
 ## Install Environment
 
@@ -40,3 +42,7 @@ You can use 夜神 simulator, 雷电 simulator to run android 5+.
 ## Screenshot
 
 ![](https://raw.githubusercontent.com/Mane-Network-Team/Android-auto-play-lianliankan/master/screenshot/1.png)
+
+## Issue
+
+- Use of algorithms in Mahjong mode it can not be accurately identified
