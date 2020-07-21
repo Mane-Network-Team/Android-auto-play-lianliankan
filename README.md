@@ -37,6 +37,6 @@ You can use 夜神 simulator, 雷电 simulator to run android 5+.
 3. Choose Hard mode and Choose Animate mode in Game.
 4. Run `python3 main.py` in terminal to auto play this Game.
 
-## screenshot
+## Screenshot
 
-![](screenshot\1.png)
+![](https://raw.githubusercontent.com/Mane-Network-Team/Android-auto-play-lianliankan/master/screenshot/1.png)
