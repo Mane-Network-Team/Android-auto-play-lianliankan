@@ -47,34 +47,3 @@ def sim_percentage(imageA,imageB):
     B1 = cv2.cvtColor(B, cv2.COLOR_BGR2GRAY)
     RTN = ssim(A1,B1)
     return (RTN)
-
-
-def sim_hash(imageA,imageB):
-
-    hash1 = img_get_dHash(imageA)
-    hash2 = img_get_dHash(imageB)
-
-    n = 0
-    # hash长度不同则返回-1代表传参出错
-    if len(hash1) != len(hash2):
-        return -1
-    # 遍历判断
-    for i in range(len(hash1)):
-        # 不相等则n计数+1，n最终为相似度
-        if hash1[i] != hash2[i]:
-            n = n + 1
-    return n
-
-def img_get_dHash(img):
-    img = cv2.resize(img, (40,30))
-    # 转换灰度图
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    hash_str = ''
-    # 每行前一个像素大于后一个像素为1，相反为0，生成哈希
-    for i in range(30):
-        for j in range(39):
-            if gray[i, j] > gray[i, j+1]:
-                hash_str = hash_str+'1'
-            else:
-                hash_str = hash_str+'0'
-    return hash_str
