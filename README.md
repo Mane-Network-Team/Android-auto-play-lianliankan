@@ -1,4 +1,7 @@
 # Android-auto-play-lianliankan
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/Mane-Network-Team/Android-auto-play-lianliankan)
+
 **No updates without big bug or important issues.**
 
 Using python to play lianliankan in android.
